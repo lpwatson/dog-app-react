@@ -14,6 +14,8 @@ const DogImage = ({ dog, isFavouritePage }: Props) => {
   const { favourites, setFavourites } = useFavourites();
   const [favourite, setFavourite] = useState<boolean | undefined>(isFavouritePage);
 
+  console.log("fav", favourite)
+
   const onImageClick = () => {
     setFavourite(!favourite);
   }
@@ -25,7 +27,7 @@ const DogImage = ({ dog, isFavouritePage }: Props) => {
       setFavourite(false)
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [favourites])
 
   useEffect(() => {
     if (favourite === true) {
