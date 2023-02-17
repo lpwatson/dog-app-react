@@ -14,8 +14,6 @@ const DogImage = ({ dog, isFavouritePage }: Props) => {
   const { favourites, setFavourites } = useFavourites();
   const [favourite, setFavourite] = useState<boolean | undefined>(isFavouritePage);
 
-  console.log("fav", favourite)
-
   const onImageClick = () => {
     setFavourite(!favourite);
   }

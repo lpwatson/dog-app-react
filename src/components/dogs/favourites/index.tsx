@@ -6,7 +6,7 @@ import { TypewrittenTitle } from "../typewritten-title";
 
 const Favourites = (): ReactElement => {
   const { favourites } = useFavourites();
-  console.log("fav",favourites)
+
   return (
     <div>
       <TypewrittenTitle>favourites</TypewrittenTitle>
