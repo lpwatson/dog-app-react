@@ -3,7 +3,7 @@ import axios, { AxiosError } from "axios";
 import { Dogs } from "../../types";
 
 const getDogs = async () => {
-  const data = await axios.get('http://localhost:3001/dogs')
+  const data = await axios.get('/dogs')
   return data;
 }
 
